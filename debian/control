@@ -7,7 +7,8 @@ Build-Depends: debhelper (>= 9), pkgconf, git,
  libavutil-dev, libfontconfig-dev, libfreetype6-dev, libglu-dev,
  libjpeg62-turbo-dev | libjpeg-turbo8-dev,
  libopenal-dev, libsfml-dev, libswscale-dev, libxinerama-dev,
- libcurl4-openssl-dev | libcurl4-nss-dev | libcurl4-gnutls-dev
+ libcurl4-openssl-dev | libcurl4-nss-dev | libcurl4-gnutls-dev,
+ libdrm-dev
 Standards-Version: 3.9.5
 Homepage: http://attractmode.org
 

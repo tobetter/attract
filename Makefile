@@ -24,10 +24,10 @@
 # BUILD CONFIGURATION OPTIONS:
 #
 # Uncomment next line to build GLES version (embedded systems)
-#USE_GLES=1
+USE_GLES=1
 #
 # Uncomment the next line to build the DRM/KMS version (alternative to X11)
-#USE_DRM=1
+USE_DRM=1
 #
 # Uncomment next line to disable movie support (i.e. no FFmpeg).
 #NO_MOVIE=1
@@ -359,6 +359,7 @@ endif
 ifeq ($(USE_DRM),1)
  TEMP_LIBS += libdrm gbm
  FE_FLAGS += -DUSE_DRM
+ CFLAGS += $(shell $(PKG_CONFIG) --cflags libdrm)
 endif
 
 ifeq ($(FE_HWACCEL_VAAPI),1)
