@@ -24,7 +24,7 @@
 # BUILD CONFIGURATION OPTIONS:
 #
 # Uncomment next line to build GLES version (embedded systems)
-USE_GLES=1
+#USE_GLES=1
 #
 # Uncomment the next line to build the DRM/KMS version (alternative to X11)
 USE_DRM=1
